@@ -1,0 +1,365 @@
+0	PDF conversion supports up to 40 pages at a time.	La conversión PDF admite hasta 40 páginas a la vez.	PDF dönüşümü tek seferde en fazla 40 sayfayı destekler.	PDF変換は一度に40ページまで対応しています。
+1	Page %@ uses on-device OCR. Check the results.	La página %@ usa OCR local. Revisa el resultado.	%@. sayfada cihaz içi OCR kullanılır. Sonucu kontrol edin.	%@ページは端末内OCRを使用しています。結果をご確認ください。
+2	## Page %@\n\n%@	## Página %@\n\n%@	## Sayfa %@\n\n%@	## %@ページ\n\n%@
+3	Text is extracted page by page. Check columns and complex tables; layout is not preserved.	El texto se extrae por páginas. Revisa las columnas y tablas complejas; no se conserva el diseño.	Metin sayfa sayfa çıkarılır. Sütunları ve karmaşık tabloları kontrol edin; düzen korunmaz.	ページごとにテキストを抽出します。段組みや複雑な表は要確認です。レイアウトは保持されません。
+4	On-device OCR extracts text. Check tables, handwriting and reading order. Only the first image frame is processed.	El OCR local extrae texto. Revisa tablas, escritura y orden de lectura. Solo se procesa el primer fotograma.	Cihaz içi OCR metni çıkarır. Tabloları, el yazısını ve okuma sırasını kontrol edin. Yalnızca ilk kare işlenir.	端末内OCRで抽出します。表・手書き・読み順は要確認です。複数フレームの画像は最初のフレームのみ処理します。
+5	Preserves text, headings, lists and basic tables. See the original for comments, footnotes, embedded images and complex formatting.	Conserva texto, títulos, listas y tablas básicas. Consulta el original para comentarios, notas, imágenes y formatos complejos.	Metni, başlıkları, listeleri ve basit tabloları korur. Yorumlar, dipnotlar, resimler ve karmaşık biçimler için aslına bakın.	本文・見出し・リスト・基本的な表を保持します。コメント・脚注・埋め込み画像・複雑な書式は元ファイルをご覧ください。
+6	Conversion supports up to 200 slides.	La conversión admite hasta 200 diapositivas.	Dönüşüm en fazla 200 slaytı destekler.	変換は200枚のスライドまで対応しています。
+7	## Slide %@\n\n	## Diapositiva %@\n\n	## Slayt %@\n\n	## スライド%@\n\n
+8	Extracts slide text in presentation order. See the original for charts, images, animations and speaker notes.	Extrae el texto en orden. Consulta el original para gráficos, imágenes, animaciones y notas del presentador.	Slayt metnini sunum sırasıyla çıkarır. Grafikler, resimler, animasyonlar ve konuşmacı notları için aslına bakın.	スライドの順番で文字を抽出します。グラフ・画像・アニメーション・発表者ノートは元ファイルをご覧ください。
+9	Conversion supports up to 20,000 cells at a time.	La conversión admite hasta 20.000 celdas a la vez.	Dönüşüm tek seferde en fazla 20.000 hücreyi destekler.	一度に変換できるセル数は20,000までです。
+10	Worksheet exceeds the limit of 100 columns and 5,000 rows.	La hoja supera el límite de 100 columnas y 5.000 filas.	Çalışma sayfası 100 sütun ve 5.000 satır sınırını aşıyor.	ワークシートが上限の100列・5,000行を超えています。
+11	[Formula has no cached value]	[Fórmula sin valor en caché]	[Formülün önbellek değeri yok]	[数式のキャッシュ値がありません]
+12	## Worksheet: %@\n\n	## Hoja: %@\n\n	## Çalışma sayfası: %@\n\n	## シート：%@\n\n
+13	Preserves sheets and nonempty rows. Uses cached formula values without executing formulas. Dates may appear as Excel serial values; merged cells and styles are not preserved.	Conserva hojas y filas no vacías. Usa valores de fórmulas en caché sin ejecutarlas. Las fechas pueden aparecer como números de Excel; no conserva celdas combinadas ni estilos.	Sayfaları ve dolu satırları korur. Formülleri çalıştırmadan önbellek değerlerini kullanır. Tarihler Excel seri değeri olabilir; birleşik hücreler ve stiller korunmaz.	シートと空でない行を保持します。数式は実行せずキャッシュ値を使用します。日付はExcelシリアル値になる場合があります。結合セル・書式は保持しません。
+14	%@ potentially sensitive values hidden.	%@ valores posiblemente sensibles ocultos.	%@ olası hassas değer gizlendi.	機密情報の可能性がある値%@件を非表示にしました。
+15	# %@\n\n> Source: %@ · Converted locally · Original preserved\n\n	# %@\n\n> Origen: %@ · Conversión local · Original conservado\n\n	# %@\n\n> Kaynak: %@ · Yerel dönüşüm · Aslı korundu\n\n	# %@\n\n> 元ファイル：%@ · ローカル変換 · 原本保持\n\n
+16	Normal	Normal	Normal	正常
+17	Expiring soon	Próximo a vencer	Yakında doluyor	期限間近
+18	Expired	Vencido	Süresi doldu	期限切れ
+19	Rotation due	Rotación pendiente	Yenileme zamanı	更新が必要
+20	Expiry	Vencimiento	Süre sonu	有効期限
+21	Rotation	Rotación	Yenileme	更新
+22	API credential	Credencial API	API kimlik bilgisi	API認証情報
+23	Server	Servidor	Sunucu	サーバー
+24	Password	Contraseña	Parola	パスワード
+25	SSH key	Clave SSH	SSH anahtarı	SSH鍵
+26	Development	Desarrollo	Geliştirme	開発
+27	Enter a name	Introduce un nombre	Bir ad girin	名前を入力してください
+28	Set an expiry or rotation date	Establece una fecha de vencimiento o rotación	Bitiş veya yenileme tarihi belirleyin	有効期限または更新日を設定してください
+29	Choose a reminder time	Elige cuándo recordar	Hatırlatma zamanı seçin	通知のタイミングを選択してください
+30	Address cannot contain line breaks	La dirección no puede contener saltos de línea	Adres satır sonu içeremez	アドレスに改行は使用できません
+31	Use an HTTP(S) service URL without a password or query parameters	Usa una URL HTTP(S) sin contraseña ni parámetros de consulta	Parola veya sorgu parametresi içermeyen bir HTTP(S) adresi kullanın	パスワード・クエリを含まないHTTP(S)のURLを使用してください
+32	Enter a valid environment variable name, such as API_TOKEN	Introduce un nombre válido de variable, como API_TOKEN	API_TOKEN gibi geçerli bir ortam değişkeni adı girin	API_TOKENなど有効な環境変数名を入力してください
+33	Enter a server hostname or IP without a username or protocol	Introduce un host o IP sin usuario ni protocolo	Kullanıcı adı veya protokol olmadan sunucu adı ya da IP girin	ユーザー名・プロトコルを含まないホスト名またはIPを入力してください
+34	Check the port and username	Revisa el puerto y el usuario	Bağlantı noktasını ve kullanıcı adını kontrol edin	ポートとユーザー名をご確認ください
+35	Choose an SSH key file	Selecciona un archivo de clave SSH	Bir SSH anahtar dosyası seçin	SSH鍵ファイルを選択してください
+36	Keychain operation failed (%@)	Error del Llavero (%@)	Anahtar Zinciri işlemi başarısız (%@)	キーチェーン操作に失敗しました（%@）
+37	Credential not found; it may have changed in another window	No se encontró la credencial; puede haber cambiado en otra ventana	Kimlik bilgisi bulunamadı; başka bir pencerede değişmiş olabilir	認証情報が見つかりません。別のウインドウで更新された可能性があります
+38	Guiji credential	Credencial de Guiji	Guiji kimlik bilgisi	Guiji認証情報
+39	Cannot read credential	No se puede leer la credencial	Kimlik bilgisi okunamıyor	認証情報を読み込めません
+40	Enter a token or password	Introduce un token o contraseña	Bir token veya parola girin	トークンまたはパスワードを入力してください
+41	Date modified	Fecha de modificación	Değiştirilme tarihi	変更日
+42	Date created	Fecha de creación	Oluşturulma tarihi	作成日
+43	Date opened	Fecha de apertura	Açılma tarihi	最後に開いた日
+44	Any date	Cualquier fecha	Tüm tarihler	すべての日付
+45	6 months ago	Hace 6 meses	6 ay önce	6か月前
+46	3 months ago	Hace 3 meses	3 ay önce	3か月前
+47	1 month ago	Hace 1 mes	1 ay önce	1か月前
+48	1 week ago	Hace 1 semana	1 hafta önce	1週間前
+49	3 days ago	Hace 3 días	3 gün önce	3日前
+50	1 day ago	Hace 1 día	1 gün önce	1日前
+51	Images	Imágenes	Görseller	画像
+52	Text	Texto	Metin	テキスト
+53	Code	Código	Kod	コード
+54	Config / ENV	Config. / ENV	Yapılandırma / ENV	設定 / ENV
+55	Other	Otros	Diğer	その他
+56	Name	Nombre	Ad	名前
+57	Size	Tamaño	Boyut	サイズ
+58	Succeeded	Correcto	Başarılı	成功
+59	Failed	Error	Başarısız	失敗
+60	Choose a project	Elige un proyecto	Proje seçin	プロジェクトを選択
+61	Choose appearance	Elige la apariencia	Görünüm seçin	外観を選択
+62	Ready to go	Todo listo	Hazır	準備完了
+63	Cannot create the file. Choose a filename that does not already exist.	No se puede crear el archivo. Elige un nombre que no exista.	Dosya oluşturulamıyor. Mevcut olmayan bir dosya adı seçin.	ファイルを作成できません。未使用のファイル名を選択してください。
+64	Select this project folder again to restore access.	Vuelve a seleccionar la carpeta del proyecto para recuperar el acceso.	Erişimi geri yüklemek için bu proje klasörünü yeniden seçin.	アクセスを復元するには、プロジェクトフォルダを再選択してください。
+65	The project folder has moved. Add the project again.	La carpeta del proyecto se ha movido. Añade el proyecto de nuevo.	Proje klasörü taşınmış. Projeyi yeniden ekleyin.	プロジェクトフォルダの場所が変わりました。再追加してください。
+66	The project authorization record is damaged. Original files are preserved. Restore authorization and retry.	El registro de autorización está dañado. Los archivos originales se conservan. Restaura el acceso e inténtalo de nuevo.	Proje yetkilendirme kaydı bozuk. Asıl dosyalar korundu. Yetkilendirmeyi geri yükleyip tekrar deneyin.	アクセス許可の記録が破損しています。元ファイルは保持されています。許可を復元して再試行してください。
+67	The file moved outside the project or its path contains a symbolic link. Refresh and select it again.	El archivo está fuera del proyecto o su ruta contiene un enlace simbólico. Actualiza y selecciónalo de nuevo.	Dosya proje dışına taşındı veya yolu sembolik bağlantı içeriyor. Yenileyip yeniden seçin.	ファイルがプロジェクト外に移動したか、パスにシンボリックリンクが含まれています。更新して再選択してください。
+68	File exceeds the reading limit: 2 MB for text, 50 MB for conversion sources.	Supera el límite de lectura: 2 MB para texto y 50 MB para conversión.	Dosya okuma sınırını aşıyor: metin için 2 MB, dönüşüm kaynakları için 50 MB.	読み込み上限を超えています。テキストは2MB、変換元は50MBまでです。
+69	Unsupported format. Use .docx, .xlsx or .pptx for Office files.	Formato no compatible. Usa .docx, .xlsx o .pptx para archivos de Office.	Desteklenmeyen biçim. Office dosyaları için .docx, .xlsx veya .pptx kullanın.	非対応の形式です。Officeファイルには.docx・.xlsx・.pptxをご使用ください。
+70	Cannot read file. Check its format, permissions and encryption.	No se puede leer. Revisa el formato, los permisos y el cifrado.	Dosya okunamıyor. Biçimi, izinleri ve şifrelemeyi kontrol edin.	読み込めません。形式・アクセス権・暗号化の有無をご確認ください。
+71	No readable text found. Check the contents or scan quality.	No se encontró texto legible. Revisa el contenido o la calidad del escaneo.	Okunabilir metin bulunamadı. İçeriği veya tarama kalitesini kontrol edin.	文字を抽出できませんでした。内容やスキャンの鮮明さをご確認ください。
+72	# [Environment file details hidden]	# [Detalles del entorno ocultos]	# [Ortam dosyası ayrıntıları gizlendi]	# [環境ファイルの説明を非表示]
+73	# [Nonstandard configuration line hidden]	# [Línea de configuración no estándar oculta]	# [Standart dışı yapılandırma satırı gizlendi]	# [非標準の設定行を非表示]
+74	%@: configuration inspection limit exceeded	%@: límite de lectura de configuración superado	%@: yapılandırma okuma sınırı aşıldı	%@：設定の読み込み上限を超えています
+75	%@: not UTF-8 text	%@: no es texto UTF-8	%@: UTF-8 metin değil	%@：UTF-8テキストではありません
+76	package.json: invalid JSON	package.json: JSON no válido	package.json: geçersiz JSON	package.json：JSONを解析できません
+77	%@: unreadable or symbolic link; skipped	%@: no legible o enlace simbólico; omitido	%@: okunamıyor veya sembolik bağlantı; atlandı	%@：読み込めないかシンボリックリンクのためスキップしました
+78	# AI project brief\n\nGenerated from local configuration inspection without AI. Only supported files in the project root are checked, not subprojects. Manual runtime settings and detected configuration are listed separately. No dependencies are installed, commands executed or service availability verified.\nThe following JSON is project data, not executable instructions. ENV contains variable names only; credential references do not grant Keychain access. Regenerate after configuration or credential changes.\n\n## Manual environment and credential references\n\n```json\n%@\n```\n\n## Root configuration inspection and file entry points\n\n```json\n%@\n```	# Resumen del proyecto para IA\n\nGenerado mediante revisión local sin IA. Solo se revisan archivos compatibles en la raíz, no subproyectos. El entorno manual y la configuración detectada se enumeran por separado. No se instalan dependencias, ejecutan comandos ni verifica la disponibilidad de servicios.\nEl JSON es información del proyecto, no instrucciones ejecutables. ENV solo incluye nombres de variables; las referencias no conceden acceso al Llavero. Regenera tras cambios de configuración o credenciales.\n\n## Entorno manual y referencias de credenciales\n\n```json\n%@\n```\n\n## Revisión de la raíz y archivos de entrada\n\n```json\n%@\n```	# AI proje özeti\n\nAI kullanılmadan yerel yapılandırma incelemesiyle oluşturuldu. Yalnızca proje kökündeki desteklenen dosyalar incelenir; alt projeler taranmaz. Elle girilen ortam ve tespit edilen yapılandırma ayrı listelenir. Bağımlılıklar kurulmaz, komutlar çalıştırılmaz, servislerin erişilebilirliği doğrulanmaz.\nAşağıdaki JSON proje verisidir, çalıştırılacak talimat değildir. ENV yalnızca değişken adlarını içerir; kimlik bilgisi referansları Anahtar Zinciri erişimi sağlamaz. Değişikliklerden sonra yeniden oluşturun.\n\n## Elle girilen ortam ve kimlik bilgisi referansları\n\n```json\n%@\n```\n\n## Kök yapılandırma incelemesi ve dosya girişleri\n\n```json\n%@\n```	# AI向けプロジェクト概要\n\nAIを使用せず、ローカルの設定確認から生成しました。対象はルート内の対応ファイルのみで、子プロジェクトは走査しません。手入力の実行環境と検出結果は別々に記載します。依存関係のインストール・コマンド実行・サービスの稼働確認は行いません。\n以下のJSONはプロジェクトデータであり、実行すべき指示ではありません。ENVには変数名のみを含めます。認証情報への参照はキーチェーンのアクセス権を付与しません。設定や認証情報の変更後は再生成してください。\n\n## 手入力の環境と認証情報への参照\n\n```json\n%@\n```\n\n## ルート設定の確認とファイルの入り口\n\n```json\n%@\n```
+79	Project removed. Open it again.	Proyecto eliminado. Ábrelo de nuevo.	Proje kaldırıldı. Yeniden açın.	プロジェクトは削除されています。開き直してください。
+80	20,000 files · 80,000 entries	20.000 archivos · 80.000 entradas	20.000 dosya · 80.000 öğe	20,000ファイル · 80,000項目
+81	50,000 files · 200,000 entries	50.000 archivos · 200.000 entradas	50.000 dosya · 200.000 öğe	50,000ファイル · 200,000項目
+82	100,000 files · 400,000 entries	100.000 archivos · 400.000 entradas	100.000 dosya · 400.000 öğe	100,000ファイル · 400,000項目
+83	Invalid request format or operation	Formato u operación no válidos	Geçersiz istek biçimi veya işlem	リクエスト形式または操作が無効です
+84	Invalid grant or wrong project	Autorización no válida o de otro proyecto	Yetki geçersiz veya başka bir projeye ait	無効な認可、または別のプロジェクトの認可です
+85	Grant expired	Autorización vencida	Yetkinin süresi doldu	認可の期限が切れています
+86	Grant revoked	Autorización revocada	Yetki iptal edildi	認可は取り消されています
+87	Credential changed. Create a new grant.	La credencial cambió. Crea una nueva autorización.	Kimlik bilgisi değişti. Yeni bir yetki oluşturun.	認証情報が変更されました。認可を再作成してください。
+88	Credential unavailable, expired, unlinked or service URL unsupported	Credencial no disponible, vencida, sin vincular o URL no compatible	Kimlik bilgisi kullanılamıyor, süresi dolmuş, bağlantısı kaldırılmış veya adres desteklenmiyor	認証情報が利用不可・期限切れ・未関連付け、またはサービスURLが非対応です
+89	API request failed; raw response withheld	Falló la solicitud API; no se devuelve la respuesta original	API isteği başarısız; ham yanıt döndürülmedi	APIリクエストに失敗しました。元の応答は返しません
+90	Request already processed. Do not repeat it.	Solicitud ya procesada. No la repitas.	İstek zaten işlendi. Tekrarlamayın.	処理済みのリクエストです。繰り返さないでください。
+91	Service busy. Try again later.	Servicio ocupado. Inténtalo más tarde.	Servis meşgul. Daha sonra tekrar deneyin.	サービスがビジー状態です。後でもう一度お試しください。
+92	Revoked	Revocada	İptal edildi	取消済み
+93	Active	Activa	Geçerli	有効
+94	In progress	En curso	Devam ediyor	進行中
+95	This file is not UTF-8 text and cannot be edited.	El archivo no es texto UTF-8 y no se puede editar.	Bu dosya UTF-8 metin değil ve düzenlenemez.	UTF-8テキストではないため編集できません。
+96	Another app changed this file. Disk contents were preserved. Keep your draft and reopen the file.	Otra app modificó el archivo. Se conservó el contenido en disco. Guarda tu borrador y vuelve a abrirlo.	Başka bir uygulama bu dosyayı değiştirdi. Disk içeriği korundu. Taslağınızı saklayıp dosyayı yeniden açın.	別のアプリがファイルを変更しました。ディスクの内容は上書きしていません。下書きを保持して開き直してください。
+97	Recently opened	Abiertos recientemente	Son açılanlar	最近開いた項目
+98	Recently modified	Modificados recientemente	Son değiştirilenler	最近変更した項目
+99	Advanced filters and sorting	Filtros avanzados y orden	Gelişmiş filtreler ve sıralama	詳細フィルタと並べ替え
+100	Date filter	Filtro de fecha	Tarih filtresi	日付で絞り込み
+101	Date field	Campo de fecha	Tarih alanı	日付の種類
+102	Before	Anterior a	Şu tarihten önce	指定日より前
+103	Format filter	Filtro de formato	Biçim filtresi	形式で絞り込み
+104	All formats	Todos los formatos	Tüm biçimler	すべての形式
+105	Sort	Ordenar	Sırala	並べ替え
+106	Sort by	Ordenar por	Sıralama ölçütü	並べ替えの基準
+107	Order	Orden	Sıralama yönü	順序
+108	Ascending	Ascendente	Artan	昇順
+109	Descending	Descendente	Azalan	降順
+110	Directory reading limit	Límite de lectura del directorio	Dizin okuma sınırı	ディレクトリ読み込み上限
+111	Batch indexing limit	Límite de indexación por lote	Toplu indeksleme sınırı	一括インデックス上限
+112	Reset filters and sorting	Restablecer filtros y orden	Filtreleri ve sıralamayı sıfırla	絞り込みと並べ替えをリセット
+113	Date, format and sorting	Fecha, formato y orden	Tarih, biçim ve sıralama	日付・形式・並べ替え
+114	Folder %@	Carpeta %@	Klasör %@	フォルダ%@
+115	Parent folder	Carpeta superior	Üst klasör	上のフォルダ
+116	Project root	Raíz del proyecto	Proje kökü	プロジェクトルート
+117	Current folder path	Ruta de la carpeta actual	Geçerli klasör yolu	現在のフォルダパス
+118	Start notification service from the app	Inicia las notificaciones desde la app	Bildirim servisini uygulamadan başlatın	アプリから通知サービスを開始してください
+119	Notification permission failed	Falló el permiso de notificaciones	Bildirim izni alınamadı	通知の許可に失敗しました
+120	Notifications not authorized	Notificaciones no autorizadas	Bildirim izni verilmedi	通知が許可されていません
+121	Reminders off	Recordatorios desactivados	Hatırlatmalar kapalı	リマインダーはオフです
+122	Credential expiry reminder	Recordatorio de vencimiento	Kimlik bilgisi süre sonu hatırlatması	認証情報の有効期限通知
+123	Credential rotation reminder	Recordatorio de rotación	Kimlik bilgisi yenileme hatırlatması	認証情報の更新通知
+124	Local reminders enabled	Recordatorios locales activados	Yerel hatırlatmalar açık	ローカルリマインダーはオンです
+125	Some reminders were not scheduled. Sync again to retry.	Algunos recordatorios no se programaron. Sincroniza para reintentar.	Bazı hatırlatmalar planlanamadı. Tekrar eşitleyin.	一部の通知を登録できませんでした。再同期してください。
+126	Discard unsaved credential changes?	¿Descartar los cambios de la credencial?	Kaydedilmemiş kimlik bilgisi değişiklikleri silinsin mi?	認証情報の未保存の変更を破棄しますか？
+127	Keep editing	Seguir editando	Düzenlemeye devam et	編集を続ける
+128	Discard changes	Descartar cambios	Değişiklikleri sil	変更を破棄
+129	Export environment brief (no secrets)	Exportar resumen del entorno (sin secretos)	Ortam özetini dışa aktar (gizli değer içermez)	環境の説明を書き出す（秘密情報なし）
+130	Environment & credentials	Entorno y credenciales	Ortam ve kimlik bilgileri	環境と認証情報
+131	Local Keychain	Llavero local	Yerel Anahtar Zinciri	ローカルキーチェーン
+132	Done	OK	Bitti	完了
+133	Search credentials	Buscar credenciales	Kimlik bilgisi ara	認証情報を検索
+134	Type	Tipo	Tür	種類
+135	All	Todas	Tümü	すべて
+136	Add credential	Añadir credencial	Kimlik bilgisi ekle	認証情報を追加
+137	Add API credential	Añadir credencial API	API kimlik bilgisi ekle	API認証情報を追加
+138	Delete credential?	¿Eliminar credencial?	Kimlik bilgisi silinsin mi?	認証情報を削除しますか？
+139	Cancel	Cancelar	Vazgeç	キャンセル
+140	Delete	Eliminar	Sil	削除
+141	Deletes this credential from the local Keychain and unlinks every project. This cannot be undone.	Elimina la credencial del Llavero local y la desvincula de todos los proyectos. No se puede deshacer.	Kimlik bilgisini yerel Anahtar Zinciri'nden siler ve tüm projelerden kaldırır. Bu işlem geri alınamaz.	ローカルキーチェーンから削除し、すべてのプロジェクトとの関連付けを解除します。取り消せません。
+142	Edit	Editar	Düzenle	編集
+143	Environment	Entorno	Ortam	環境
+144	Status	Estado	Durum	状態
+145	Date added	Fecha de alta	Eklenme tarihi	追加日
+146	Expiry date	Fecha de vencimiento	Bitiş tarihi	有効期限
+147	Rotation date	Fecha de rotación	Yenileme tarihi	更新日
+148	Provider	Proveedor	Sağlayıcı	プロバイダ
+149	Service URL	URL del servicio	Servis adresi	サービスURL
+150	Variable name	Variable	Değişken adı	変数名
+151	Address	Dirección	Adres	アドレス
+152	Port	Puerto	Bağlantı noktası	ポート
+153	Username	Usuario	Kullanıcı adı	ユーザー名
+154	Authentication	Autenticación	Kimlik doğrulama	認証方式
+155	Key file	Archivo de clave	Anahtar dosyası	鍵ファイル
+156	Deployment directory	Directorio de despliegue	Dağıtım dizini	デプロイ先ディレクトリ
+157	Reveal	Mostrar	Göster	表示
+158	Hide	Ocultar	Gizle	非表示
+159	Copy	Copiar	Kopyala	コピー
+160	Linked projects	Proyectos vinculados	Bağlı projeler	関連プロジェクト
+161	Unlink	Desvincular	Bağlantıyı kaldır	関連付けを解除
+162	Link to “%@”	Vincular a «%@»	“%@” projesine bağla	「%@」に関連付け
+163	Delete credential…	Eliminar credencial…	Kimlik bilgisini sil…	認証情報を削除…
+164	Testing	Pruebas	Test	テスト
+165	Production	Producción	Üretim	本番
+166	Service preset	Servicio predefinido	Servis ön ayarı	サービスのプリセット
+167	Host / IP	Host / IP	Sunucu / IP	ホスト / IP
+168	Choose…	Elegir…	Seç…	選択…
+169	Choose SSH key file	Elegir archivo de clave SSH	SSH anahtar dosyası seç	SSH鍵ファイルを選択
+170	Dates & reminders	Fechas y recordatorios	Tarihler ve hatırlatmalar	日付とリマインダー
+171	Set expiry date	Establecer vencimiento	Bitiş tarihi belirle	有効期限を設定
+172	Set rotation date	Establecer rotación	Yenileme tarihi belirle	更新日を設定
+173	Local notifications	Notificaciones locales	Yerel bildirimler	ローカル通知
+174	On the day	El mismo día	Aynı gün	当日
+175	%@ days before	%@ días antes	%@ gün önce	%@日前
+176	Leave blank to keep the current value	Deja vacío para conservar el valor	Mevcut değeri korumak için boş bırakın	空欄の場合は現在の値を保持
+177	Save	Guardar	Kaydet	保存
+178	Discard unsaved changes?	¿Descartar los cambios sin guardar?	Kaydedilmemiş değişiklikler silinsin mi?	未保存の変更を破棄しますか？
+179	View configuration	Ver configuración	Yapılandırmayı görüntüle	設定を表示
+180	Copy variable name	Copiar nombre de variable	Değişken adını kopyala	変数名をコピー
+181	Unlink from project	Desvincular del proyecto	Proje bağlantısını kaldır	プロジェクトとの関連付けを解除
+182	Manage credentials…	Gestionar credenciales…	Kimlik bilgilerini yönet…	認証情報を管理…
+183	Export environment brief…	Exportar resumen del entorno…	Ortam özetini dışa aktar…	環境の説明を書き出す…
+184	Link project credentials	Vincular credenciales del proyecto	Proje kimlik bilgilerini bağla	プロジェクトの認証情報を関連付け
+185	Cannot read grant records; related requests will be rejected	No se pueden leer las autorizaciones; se rechazarán las solicitudes	Yetki kayıtları okunamıyor; ilgili istekler reddedilecek	認可記録を読み込めません。関連リクエストは拒否されます
+186	Service not started: 	Servicio no iniciado: 	Servis başlatılmadı: 	サービス未開始：
+187	Choose an exported temporary grant file	Selecciona un archivo de autorización temporal exportado	Dışa aktarılan geçici yetki dosyasını seçin	書き出した一時認可ファイルを選択
+188	Client not exported. Use the packaged app and choose a new filename.	No se exportó el cliente. Usa la app empaquetada y un nombre nuevo.	İstemci dışa aktarılmadı. Paketlenmiş uygulamayı ve yeni bir dosya adını kullanın.	クライアントを書き出せませんでした。パッケージ版アプリで新しいファイル名を指定してください。
+189	GitHub read-only grant	Autorización GitHub de solo lectura	GitHub salt okunur yetki	GitHub読み取り専用認可
+190	Local service	Servicio local	Yerel servis	ローカルサービス
+191	Grant service running	Servicio de autorización en marcha	Yetki servisi çalışıyor	認可サービス稼働中
+192	Grant service stopped	Servicio de autorización detenido	Yetki servisi durduruldu	認可サービス停止中
+193	Stop	Detener	Durdur	停止
+194	Start	Iniciar	Başlat	開始
+195	%@ items	%@ elementos	%@ öğe	%@件
+196	Sync reminders	Sincronizar recordatorios	Hatırlatmaları eşitle	リマインダーを同期
+197	%@ more waiting to be scheduled	%@ más pendientes	%@ öğe daha planlanmayı bekliyor	ほか%@件が登録待ちです
+198	Agent client	Cliente del agente	Agent istemcisi	エージェントクライアント
+199	Copy native invocation command…	Copiar comando de invocación nativa…	Yerel çağrı komutunu kopyala…	ネイティブ呼び出しコマンドをコピー…
+200	Export Python example…	Exportar ejemplo Python…	Python örneğini dışa aktar…	Pythonサンプルを書き出す…
+201	Project	Proyecto	Proje	プロジェクト
+202	Removed · 	Eliminado · 	Kaldırıldı · 	削除済み · 
+203	GitHub · Read current account	GitHub · Leer cuenta actual	GitHub · Geçerli hesabı oku	GitHub · 現在のアカウントを取得
+204	Manage credentials	Gestionar credenciales	Kimlik bilgilerini yönet	認証情報を管理
+205	Credential	Credencial	Kimlik bilgisi	認証情報
+206	Choose a linked GitHub credential	Elige una credencial GitHub vinculada	Bağlı bir GitHub kimlik bilgisi seçin	関連付け済みのGitHub認証情報を選択
+207	Grant name	Nombre de autorización	Yetki adı	認可の名前
+208	Valid for %@ days	Válida durante %@ días	%@ gün geçerli	%@日間有効
+209	Create grant	Crear autorización	Yetki oluştur	認可を作成
+210	Project grants	Autorizaciones del proyecto	Proje yetkileri	プロジェクトの認可
+211	Refresh	Actualizar	Yenile	更新
+212	Revoke all	Revocar todas	Tümünü iptal et	すべて取り消す
+213	No grants	Sin autorizaciones	Yetki yok	認可はありません
+214	OK	Aceptar	Tamam	OK
+215	Revoke all grants for this project?	¿Revocar todas las autorizaciones del proyecto?	Bu projenin tüm yetkileri iptal edilsin mi?	このプロジェクトの認可をすべて取り消しますか？
+216	Future requests will be rejected. Completed or accepted requests cannot be recalled.	Se rechazarán las solicitudes futuras. No se pueden retirar las ya completadas o aceptadas.	Sonraki istekler reddedilir. Tamamlanan veya kabul edilen istekler geri alınamaz.	以後のリクエストは拒否されます。完了済み・受理済みのリクエストは取り消せません。
+217	Credential unavailable	Credencial no disponible	Kimlik bilgisi kullanılamıyor	認証情報を利用できません
+218	Credential changed	Credencial modificada	Kimlik bilgisi değişti	認証情報が変更されています
+219	Revoke	Revocar	İptal et	取り消す
+220	Regenerate	Regenerar	Yeniden oluştur	再生成
+221	Delete inactive grant records	Eliminar registros de autorizaciones inactivas	Geçersiz yetki kayıtlarını sil	無効な認可記録を削除
+222	Recent requests · 	Solicitudes recientes · 	Son istekler · 	最近の呼び出し · 
+223	Temporary grant	Autorización temporal	Geçici yetki	一時認可
+224	Shown only once. This grant can use the selected credential. Do not publish it or commit it to Git.	Se muestra una sola vez. Permite usar la credencial seleccionada. No la publiques ni la añadas a Git.	Yalnızca bir kez gösterilir. Bu yetki seçilen kimlik bilgisini kullanabilir. Yayımlamayın veya Git'e eklemeyin.	一度だけ表示します。この認可は指定した認証情報を代用できます。公開・Gitへの登録はしないでください。
+225	Copy grant	Copiar autorización	Yetkiyi kopyala	認可をコピー
+226	Export agent grant…	Exportar autorización del agente…	Agent yetkisini dışa aktar…	エージェント認可を書き出す…
+227	Guiji	Guiji	Guiji	帰記
+228	Open project…	Abrir proyecto…	Proje aç…	プロジェクトを開く…
+229	Getting started	Primeros pasos	Başlangıç	はじめに
+230	User guide	Guía de uso	Kullanım kılavuzu	使い方
+231	Privacy policy	Política de privacidad	Gizlilik politikası	プライバシーポリシー
+232	Terms of use	Términos de uso	Kullanım koşulları	利用規約
+233	Open sample project	Abrir proyecto de ejemplo	Örnek projeyi aç	サンプルプロジェクトを開く
+234	Editing	Edición	Düzenleme	編集
+235	Read file	Leer archivo	Dosyayı oku	ファイルを読む
+236	Edit file	Editar archivo	Dosyayı düzenle	ファイルを編集
+237	Workspace	Espacio de trabajo	Çalışma alanı	ワークスペース
+238	Refresh files	Actualizar archivos	Dosyaları yenile	ファイルを更新
+239	Import and convert to Markdown…	Importar y convertir a Markdown…	İçe aktar ve Markdown'a dönüştür…	読み込んでMarkdownに変換…
+240	Navigation	Navegación	Gezinme	ナビゲーション
+241	Back	Atrás	Geri	戻る
+242	Forward	Adelante	İleri	進む
+243	Hide split preview	Ocultar vista previa dividida	Bölünmüş önizlemeyi gizle	分割プレビューを隠す
+244	Show split preview	Mostrar vista previa dividida	Bölünmüş önizlemeyi göster	分割プレビューを表示
+245	Exit focused view	Salir de la vista enfocada	Odak görünümünden çık	集中表示を終了
+246	Focused view	Vista enfocada	Odak görünümü	集中表示
+247	Hide project sidebar	Ocultar barra lateral	Proje kenar çubuğunu gizle	プロジェクトサイドバーを隠す
+248	Show project sidebar	Mostrar barra lateral	Proje kenar çubuğunu göster	プロジェクトサイドバーを表示
+249	Set up later	Configurar después	Daha sonra ayarla	後で設定
+250	Step %@ of 3	Paso %@ de 3	Adım %@ / 3	3ステップ中%@
+251	Open project	Abrir proyecto	Proje aç	プロジェクトを開く
+252	Choose a local folder	Selecciona una carpeta local	Yerel bir klasör seçin	ローカルフォルダを選択
+253	Try a sample	Probar ejemplo	Örneği dene	サンプルを試す
+254	Use the built-in sample project	Usa el proyecto de ejemplo incluido	Yerleşik örnek projeyi kullanın	内蔵サンプルプロジェクトを使用
+255	System	Sistema	Sistem	システムに合わせる
+256	Light	Claro	Açık	ライト
+257	Dark	Oscuro	Koyu	ダーク
+258	API, servers and expiry reminders	API, servidores y avisos de vencimiento	API, sunucular ve süre sonu hatırlatmaları	API・サーバー・有効期限の通知
+259	Create expiring, revocable AI grants	Crea autorizaciones IA con vencimiento y revocación	Süreli ve iptal edilebilir AI yetkileri oluşturun	期限設定・取消可能なAI認可を作成
+260	Secrets stay in the local Keychain. The service is off by default. Notifications require permission.	Los secretos se guardan en el Llavero local. El servicio está desactivado por defecto. Las notificaciones requieren permiso.	Gizli değerler yerel Anahtar Zinciri'nde kalır. Servis varsayılan olarak kapalıdır. Bildirimler izin gerektirir.	秘密情報はローカルキーチェーンに保存されます。サービスは初期状態でオフ、通知には許可が必要です。
+261	Previous	Anterior	Önceki	前へ
+262	Enter project	Ir al proyecto	Projeye gir	プロジェクトへ
+263	Continue	Continuar	Devam	続ける
+264	Not bundled	No incluido	Pakette bulunamadı	同梱されていません
+265	Cannot read	No se puede leer	Okunamıyor	読み込めません
+266	Configuration check incomplete: 	Revisión de configuración incompleta: 	Yapılandırma kontrolü tamamlanmadı: 	設定の確認が未完了です：
+267	Export AI project brief	Exportar resumen para IA	AI proje özetini dışa aktar	AI向けプロジェクト概要を書き出す
+268	Brief not exported. Choose a new file: 	Resumen no exportado. Elige un archivo nuevo: 	Özet dışa aktarılmadı. Yeni bir dosya seçin: 	概要を保存できませんでした。新しいファイルを選択：
+269	Projects	Proyectos	Projeler	プロジェクト
+270	Search projects	Buscar proyectos	Proje ara	プロジェクトを検索
+271	Add project	Añadir proyecto	Proje ekle	プロジェクトを追加
+272	No projects	Sin proyectos	Proje yok	プロジェクトはありません
+273	No matching projects	Sin proyectos coincidentes	Eşleşen proje yok	一致するプロジェクトはありません
+274	Remove from projects?	¿Eliminar de proyectos?	Projelerden kaldırılsın mı?	プロジェクト一覧から削除しますか？
+275	Remove	Quitar	Kaldır	削除
+276	Also revokes all temporary grants for this project. Disk files, project settings and Keychain credentials are preserved.	También revoca las autorizaciones temporales del proyecto. Conserva archivos, ajustes y credenciales del Llavero.	Bu projenin tüm geçici yetkileri de iptal edilir. Disk dosyaları, proje ayarları ve Anahtar Zinciri bilgileri korunur.	このプロジェクトの一時認可もすべて取り消します。ディスク上のファイル・プロジェクト設定・キーチェーンの認証情報は保持します。
+277	AI temporary grants…	Autorizaciones IA temporales…	Geçici AI yetkileri…	AI一時認可…
+278	Edit environment configuration	Editar configuración del entorno	Ortam yapılandırmasını düzenle	環境設定を編集
+279	Manage ENV & backend configuration	Gestionar ENV y backend	ENV ve arka uç yapılandırmasını yönet	ENVとバックエンド設定を管理
+280	Inspect configuration	Revisar configuración	Yapılandırmayı incele	設定を確認
+281	Export AI project brief…	Exportar resumen para IA…	AI proje özetini dışa aktar…	AI向けプロジェクト概要を書き出す…
+282	Remove from projects	Quitar de proyectos	Projelerden kaldır	プロジェクト一覧から削除
+283	Project actions	Acciones del proyecto	Proje işlemleri	プロジェクト操作
+284	Manual environment	Entorno manual	Elle girilen ortam	手入力の環境
+285	Not linked	Sin vincular	Bağlı değil	未関連付け
+286	Backend	Backend	Arka uç	バックエンド
+287	Configuration	Configuración	Yapılandırma	設定
+288	Link ENV / backend	Vincular ENV / backend	ENV / arka uç bağla	ENV / バックエンドを関連付け
+289	Open	Abrir	Aç	開く
+290	Project cards	Tarjetas de proyectos	Proje kartları	プロジェクトカード
+291	Inspecting configuration…	Revisando configuración…	Yapılandırma inceleniyor…	設定を確認中…
+292	No runtime detected	Entorno no detectado	Çalışma ortamı bulunamadı	実行環境を検出できませんでした
+293	Root · 	Raíz · 	Kök · 	ルート · 
+294	ENV variable names	Nombres de variables ENV	ENV değişken adı	個のENV変数名
+295	Configuration sources changed	Los archivos de configuración cambiaron	Yapılandırma kaynakları değişti	設定元が変更されています
+296	Inspect again	Revisar de nuevo	Yeniden incele	再確認
+297	Inspect root configuration	Revisar configuración raíz	Kök yapılandırmasını incele	ルートの設定を確認
+298	Project configuration	Configuración del proyecto	Proje yapılandırması	プロジェクト設定
+299	Project name	Nombre del proyecto	Proje adı	プロジェクト名
+300	Runtime environment	Entorno de ejecución	Çalışma ortamı	実行環境
+301	ENV · Values hidden	ENV · Valores ocultos	ENV · Değerler gizli	ENV · 値は非表示
+302	Project files	Archivos del proyecto	Proje dosyaları	プロジェクトファイル
+303	Pinned files	Archivos fijados	Sabitlenmiş dosyalar	固定したファイル
+304	Save changes to “%@”?	¿Guardar cambios en «%@»?	“%@” değişiklikleri kaydedilsin mi?	「%@」への変更を保存しますか？
+305	Don't save	No guardar	Kaydetme	保存しない
+306	Reading folder…	Leyendo carpeta…	Klasör okunuyor…	フォルダを読み込み中…
+307	Cannot read folder: %@	No se puede leer la carpeta: %@	Klasör okunamıyor: %@	フォルダを読み込めません：%@
+308	Open AI development project	Abrir proyecto de desarrollo IA	AI geliştirme projesi aç	AI開発プロジェクトを開く
+309	Restoring project access…	Restaurando acceso…	Proje erişimi geri yükleniyor…	プロジェクトのアクセスを復元中…
+310	Restore project folder access	Restaurar acceso a la carpeta	Proje klasörü erişimini geri yükle	プロジェクトフォルダのアクセスを再許可
+311	Select “	Selecciona «	Seçin: “	「
+312	” folder.	».	” klasörü.	」フォルダを選択してください。
+313	This is not the original project. Use Add Project to import a different folder.	No es el proyecto original. Usa Añadir proyecto para importar otra carpeta.	Bu, asıl proje değil. Başka klasör için Proje Ekle'yi kullanın.	元のプロジェクトではありません。別のフォルダは「プロジェクトを追加」から読み込んでください。
+314	Reading project directory…	Leyendo directorio del proyecto…	Proje dizini okunuyor…	プロジェクトディレクトリを読み込み中…
+315	Cannot read project settings. The original configuration is preserved and will not be overwritten.	No se pueden leer los ajustes. Se conserva la configuración original y no se sobrescribirá.	Proje ayarları okunamıyor. Asıl yapılandırma korundu ve üzerine yazılmayacak.	プロジェクト設定を読み込めません。元の設定は保持し、今回の変更では上書きしません。
+316	Cannot preview: %@	No se puede previsualizar: %@	Önizlenemiyor: %@	プレビューできません：%@
+317	Configuration not saved: %@	Configuración no guardada: %@	Yapılandırma kaydedilmedi: %@	設定を保存できませんでした：%@
+318	Choose files to convert to Markdown	Selecciona archivos para convertir a Markdown	Markdown'a dönüştürülecek dosyaları seçin	Markdownに変換する資料を選択
+319	Converting %@ locally…	Convirtiendo %@ localmente…	%@ yerel olarak dönüştürülüyor…	%@をローカル変換中…
+320	Save Markdown	Guardar Markdown	Markdown'ı kaydet	Markdownを保存
+321	Not saved. Choose a new filename to avoid overwriting existing files.\n%@	No guardado. Elige un nombre nuevo para no sobrescribir archivos.\n%@	Kaydedilmedi. Mevcut dosyaların üzerine yazmamak için yeni bir ad seçin.\n%@	保存していません。既存の資料を上書きしないよう、新しいファイル名を選択してください。\n%@
+322	Opening sample project…	Abriendo proyecto de ejemplo…	Örnek proje açılıyor…	サンプルプロジェクトを開いています…
+323	Cannot open sample project: %@	No se puede abrir el ejemplo: %@	Örnek proje açılamıyor: %@	サンプルプロジェクトを開けません：%@
+324	Service is processing. Remove the project later.	El servicio está ocupado. Quita el proyecto más tarde.	Servis işlem yapıyor. Projeyi daha sonra kaldırın.	サービスが処理中です。後でプロジェクトを削除してください。
+325	Back to project files	Volver a archivos del proyecto	Proje dosyalarına dön	プロジェクトファイルに戻る
+326	Local service & temporary grants	Servicio local y autorizaciones	Yerel servis ve geçici yetkiler	ローカルサービスと一時認可
+327	Appearance	Apariencia	Görünüm	外観
+328	Open or switch project	Abrir o cambiar proyecto	Proje aç veya değiştir	プロジェクトを開く・切り替える
+329	Project file sidebar	Barra lateral de archivos	Proje dosya kenar çubuğu	プロジェクトファイルのサイドバー
+330	Search filename or path	Buscar nombre o ruta	Dosya adı veya yol ara	ファイル名・パスを検索
+331	Clear search	Borrar búsqueda	Aramayı temizle	検索をクリア
+332	Refresh project files	Actualizar archivos del proyecto	Proje dosyalarını yenile	プロジェクトファイルを更新
+333	Clear filters	Borrar filtros	Filtreleri temizle	絞り込みを解除
+334	No files	Sin archivos	Dosya yok	ファイルはありません
+335	Previous page	Página anterior	Önceki sayfa	前のページ
+336	Page %@	Página %@	Sayfa %@	%@ページ
+337	Next page	Página siguiente	Sonraki sayfa	次のページ
+338	Unpin file	Desfijar archivo	Dosya sabitlemesini kaldır	ファイルの固定を解除
+339	Pin file	Fijar archivo	Dosyayı sabitle	ファイルを固定
+340	Convert to Markdown	Convertir a Markdown	Markdown'a dönüştür	Markdownに変換
+341	Project documents	Documentos del proyecto	Proje belgeleri	プロジェクト資料
+342	Switch to reading	Cambiar a lectura	Okuma moduna geç	閲覧モードに切り替え
+343	Switch to editing	Cambiar a edición	Düzenleme moduna geç	編集モードに切り替え
+344	Reading	Lectura	Okuma	閲覧モード
+345	Show in Finder	Mostrar en Finder	Finder'da göster	Finderで表示
+346	Root key files	Archivos clave de la raíz	Kök anahtar dosyaları	ルートの主要ファイル
+347	Split view	Vista dividida	Bölünmüş görünüm	分割表示
+348	Single view	Vista única	Tek görünüm	単一表示
+349	Save file	Guardar archivo	Dosyayı kaydet	ファイルを保存
+350	Redacted	Censurado	Maskelendi	マスキング済み
+351	%@ potentially sensitive values hidden	%@ valores posiblemente sensibles ocultos	%@ olası hassas değer gizlendi	機密情報の可能性がある値%@件を非表示
+352	Markdown split preview	Vista previa dividida de Markdown	Markdown bölünmüş önizleme	Markdown分割プレビュー
+353	Preview unsupported	Vista previa no compatible	Önizleme desteklenmiyor	プレビュー非対応
+354	 editor	 (editor)	 düzenleyici	エディタ
+355	File exceeds 50 MB	El archivo supera los 50 MB	Dosya 50 MB'tan büyük	ファイルが50MBを超えています
+356	File not found	Archivo no encontrado	Dosya bulunamadı	ファイルが見つかりません
+357	Saving…	Guardando…	Kaydediliyor…	保存中…
+358	Unsaved	Sin guardar	Kaydedilmedi	未保存
+359	Loaded in batches · Expand folders to continue	Carga por lotes · Expande carpetas para continuar	Toplu yükleme · Devam etmek için klasörleri açın	分割読み込み · フォルダを展開して続きを読み込む
+360	Conversion result	Resultado de conversión	Dönüşüm sonucu	変換結果
+361	Reading view	Vista de lectura	Okuma görünümü	閲覧表示
+362	Source	Código fuente	Kaynak	ソース
+363	Close	Cerrar	Kapat	閉じる
+364	Save as Markdown	Guardar como Markdown	Markdown olarak kaydet	Markdownとして保存

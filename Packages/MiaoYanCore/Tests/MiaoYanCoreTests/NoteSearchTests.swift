@@ -1,0 +1,175 @@
+import XCTest
+
+import MiaoYanCore
+
+final class NoteSearchReaderTests: XCTestCase {
+    func testReadsMatchBeyondFormerSearchLimitAndAcrossUTF8ChunkBoundary() throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: url) }
+        let text = String(repeating: "a", count: 65_535) + "中文 café" + String(repeating: "b", count: 65_536)
+        try text.write(to: url, atomically: true, encoding: .utf8)
+        let result = try NoteSearchReader.read(url)
+        XCTAssertEqual(result, text)
+        XCTAssertNotNil(result.range(of: "中文 CAFE", options: [.caseInsensitive, .diacriticInsensitive]))
+    }
+
+    func testEmptyFileRemainsReadableForTitleSearch() throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: url) }
+        try Data().write(to: url)
+        XCTAssertEqual(try NoteSearchReader.read(url), "")
+    }
+
+    func testReadsGBKNoteForSearch() throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: url) }
+        let text = "这是一篇旧的周报"
+        try XCTUnwrap(text.data(using: NoteTextTests.encoding(.GB_18030_2000))).write(to: url)
+        XCTAssertEqual(try NoteSearchReader.read(url), text)
+    }
+
+    func testCancellationStopsBeforeOpeningFile() async {
+        let task = Task {
+            withUnsafeCurrentTask { $0?.cancel() }
+            do {
+                _ = try NoteSearchReader.read(URL(fileURLWithPath: "/nonexistent-miaoyan-search-test"))
+                XCTFail("Cancelled reads must stop before opening a file")
+            } catch is CancellationError {
+                // Expected, rather than a file-not-found error.
+            } catch {
+                XCTFail("Expected cancellation, got \(error)")
+            }
+        }
+        await task.value
+    }
+}
+
+final class NoteTextTests: XCTestCase {
+    static func encoding(_ cf: CFStringEncodings) -> String.Encoding {
+        String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(cf.rawValue)))
+    }
+
+    /// Legacy notes decode to their own text, never to a lossy guess that
+    /// the next save would write back as UTF-8 mojibake.
+    func testLegacyEncodingsDecodeToTheirOwnText() throws {
+        let samples: [(String, String.Encoding)] = [
+            ("这是一篇旧的周报，记录了本周的工作。", Self.encoding(.GB_18030_2000)),
+            ("這是一篇舊的週報，記錄了本週的工作。", Self.encoding(.big5)),
+            ("plain café 中文", .utf8),
+            ("UTF-16 note 中文", .utf16),
+            ("Windows note: café, naïve, résumé", .windowsCP1252),
+        ]
+        for (text, encoding) in samples {
+            let data = try XCTUnwrap(text.data(using: encoding))
+            XCTAssertEqual(NoteText.decode(data), text, "\(encoding)")
+        }
+    }
+
+    /// A mostly English note with a few CJK characters was detected as a
+    /// Western or Cyrillic code page and saved back as mojibake. The user's
+    /// language settles it, without pulling other CJK encodings its way.
+    func testMostlyEnglishLegacyNotesFollowTheUsersLanguage() throws {
+        struct Sample {
+            let text: String
+            let encoding: String.Encoding
+            let languages: [String]
+        }
+        let samples = [
+            Sample(text: "# Weekly\n\n- Fix the sidebar\n- Ship 4.6\n- 周报", encoding: Self.encoding(.GB_18030_2000), languages: ["zh-Hans-CN", "en"]),
+            Sample(text: "# Weekly\n\n- Fix the sidebar\n- Ship 4.6\n- 週報", encoding: Self.encoding(.big5), languages: ["zh-Hant-TW"]),
+            Sample(text: "# Memo\n\n- Fix sidebar\n- 메모", encoding: Self.encoding(.EUC_KR), languages: ["ko-KR"]),
+            Sample(text: "今日はいい天気ですね。散歩に行きましょう。", encoding: .shiftJIS, languages: ["zh-Hans-CN"]),
+            Sample(text: "Café au lait, résumé, naïve façade.", encoding: .windowsCP1252, languages: ["zh-Hans-CN"]),
+            Sample(text: "Café au lait, résumé, naïve façade.", encoding: .windowsCP1252, languages: ["en-US"]),
+        ]
+        for sample in samples {
+            let data = try XCTUnwrap(sample.text.data(using: sample.encoding))
+            XCTAssertEqual(NoteText.decode(data, preferredLanguages: sample.languages), sample.text, "\(sample.encoding) \(sample.languages)")
+        }
+    }
+}
+
+final class NoteContentMatcherTests: XCTestCase {
+    private func candidate(_ index: Int, title: String, url: URL = URL(fileURLWithPath: "/nonexistent"), loaded: String? = nil) -> NoteSearchCandidate {
+        NoteSearchCandidate(index: index, title: title, url: url, loadedText: loaded)
+    }
+
+    func testPriorityFollowsWhereTheTermsWereFound() {
+        XCTAssertEqual(NoteContentMatcher.priority(title: "潮流周刊", body: { "" }, terms: ["潮流"]), 4)
+        XCTAssertEqual(NoteContentMatcher.priority(title: "潮流周刊", body: { "Rust 工具" }, terms: ["潮流", "rust"]), 2)
+        XCTAssertEqual(NoteContentMatcher.priority(title: "周刊", body: { "Rust 工具" }, terms: ["rust"]), 1)
+        XCTAssertNil(NoteContentMatcher.priority(title: "周刊", body: { "Rust" }, terms: ["go"]))
+    }
+
+    /// The body search ignores case but not accents, and finds an accented
+    /// word whether the body or the query holds it composed or decomposed,
+    /// as `lowercased()` plus `contains` did.
+    func testBodyMatchIgnoresCaseButKeepsAccentsAndCanonicalForms() {
+        func found(_ body: String, _ term: String) -> Bool {
+            NoteContentMatcher.priority(title: "", body: { body }, terms: [term]) != nil
+        }
+        XCTAssertTrue(found("The Quick FOX", "fox"))
+        XCTAssertTrue(found("妙言 MiaoYan 预览", "miaoyan 预"))
+        XCTAssertTrue(found("ＡＢＣ 全角", "ａｂｃ"))
+        XCTAssertTrue(found("Hello CAFÉ", "café"))
+        XCTAssertTrue(found("cafe\u{301} decomposed", "café"))
+        XCTAssertTrue(found("café composed", "cafe\u{301}"))
+        XCTAssertFalse(found("Hello Café", "cafe"))
+        XCTAssertFalse(found("cafe\u{301}", "cafe"))
+        XCTAssertFalse(found("妙言预览", "预览不存在"))
+    }
+
+    func testBodyIsNotReadWhenTheTitleSettlesTheMatch() {
+        var reads = 0
+        _ = NoteContentMatcher.priority(
+            title: "潮流周刊",
+            body: {
+                reads += 1; return ""
+            }, terms: ["周刊"])
+        XCTAssertEqual(reads, 0)
+    }
+
+    func testADotMatchesTextNotTheFileExtension() {
+        // Titles carry no extension, so "." only matches a note that has one.
+        let matches = NoteContentMatcher.match(
+            [candidate(0, title: "潮流周刊", loaded: "没有句点"), candidate(1, title: "周刊", loaded: "v1.2")],
+            terms: ["."], limit: .max, isCancelled: { false })
+        XCTAssertEqual(matches.map(\.index), [1])
+    }
+
+    func testLoadedTextWinsOverTheFileAndUnloadedNotesAreRead() throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: url) }
+        try "saved on disk".write(to: url, atomically: true, encoding: .utf8)
+
+        let fromDisk = NoteContentMatcher.match([candidate(0, title: "a", url: url)], terms: ["disk"], limit: .max, isCancelled: { false })
+        XCTAssertEqual(fromDisk.map(\.index), [0])
+
+        // An open note's unsaved text is what the user sees, so it decides.
+        let edited = NoteContentMatcher.match([candidate(0, title: "a", url: url, loaded: "typed just now")], terms: ["disk"], limit: .max, isCancelled: { false })
+        XCTAssertTrue(edited.isEmpty)
+    }
+
+    func testLimitCapsBodyMatchesAndCancellationReturnsNothing() {
+        let all = (0..<5).map { candidate($0, title: "entry \($0)", loaded: "a note") }
+        XCTAssertEqual(NoteContentMatcher.match(all, terms: ["note"], limit: 2, isCancelled: { false }).map(\.index), [0, 1])
+        XCTAssertTrue(NoteContentMatcher.match(all, terms: ["note"], limit: .max, isCancelled: { true }).isEmpty)
+    }
+
+    func testATitleMatchIsNeverCutByEarlierBodyMatches() {
+        let bodies = (0..<150).map { candidate($0, title: "entry \($0)", loaded: "mentions plan") }
+        let exact = candidate(150, title: "plan")
+        let found = NoteContentMatcher.match(bodies + [exact], terms: ["plan"], limit: 100, isCancelled: { false })
+        XCTAssertTrue(found.contains { $0.index == 150 && $0.priority == 4 }, "the note titled exactly as the query is kept")
+        XCTAssertEqual(found.count, 100)
+    }
+
+    func testUnopenedGBKNotesMatchOnTheirBody() throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: url) }
+        let gb18030 = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.GB_18030_2000.rawValue)))
+        try XCTUnwrap("旧笔记里的周报".data(using: gb18030)).write(to: url)
+        let found = NoteContentMatcher.match([candidate(0, title: "legacy", url: url)], terms: ["周报"], limit: 100, isCancelled: { false })
+        XCTAssertEqual(found.map(\.index), [0])
+    }
+}

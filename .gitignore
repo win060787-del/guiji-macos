@@ -1,0 +1,37 @@
+# macOS and Xcode
+.DS_Store
+._*
+.build/
+.build-*/
+.swiftpm/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+
+# Builds and local reports
+dist/
+release/
+evidence/
+*.xcarchive
+*.app/
+*.pkg
+*.dmg
+*.zip
+*.log
+Demo/design/validation/app-store-*.json
+__pycache__/
+*.pyc
+
+# Local configuration, secrets and databases
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.mobileprovision
+*.provisionprofile
+*.keychain*
+*.sqlite*
+*.db

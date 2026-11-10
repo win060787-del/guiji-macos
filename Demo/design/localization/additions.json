@@ -1,0 +1,98 @@
+{
+  "选择语言": {
+    "zh-Hans": "选择语言",
+    "zh-Hant": "選擇語言",
+    "en": "Choose your language",
+    "es": "Elige tu idioma",
+    "tr": "Dilinizi seçin",
+    "ja": "言語を選択"
+  },
+  "语言": {
+    "zh-Hans": "语言",
+    "zh-Hant": "語言",
+    "en": "Language",
+    "es": "Idioma",
+    "tr": "Dil",
+    "ja": "言語"
+  },
+  "设置": {
+    "zh-Hans": "设置",
+    "zh-Hant": "設定",
+    "en": "Settings",
+    "es": "Ajustes",
+    "tr": "Ayarlar",
+    "ja": "設定"
+  },
+  "第 %@ 步，共 %@ 步": {
+    "zh-Hans": "第 %@ 步，共 %@ 步",
+    "zh-Hant": "第 %@ 步，共 %@ 步",
+    "en": "Step %@ of %@",
+    "es": "Paso %@ de %@",
+    "tr": "Adım %@ / %@",
+    "ja": "ステップ%@ / %@"
+  },
+  "文件": {
+    "zh-Hans": "文件",
+    "zh-Hant": "檔案",
+    "en": "file",
+    "es": "archivo",
+    "tr": "dosya",
+    "ja": "ファイル"
+  },
+  "文档无法读取": {
+    "zh-Hans": "文档无法读取",
+    "zh-Hant": "無法讀取文件",
+    "en": "Cannot read document",
+    "es": "No se puede leer el documento",
+    "tr": "Belge okunamıyor",
+    "ja": "文書を読み込めません"
+  },
+  "文档未打包": {
+    "zh-Hans": "文档未打包",
+    "zh-Hant": "未包含文件",
+    "en": "Document not bundled",
+    "es": "Documento no incluido",
+    "tr": "Belge pakette bulunamadı",
+    "ja": "文書が同梱されていません"
+  },
+  "请选择“%@”文件夹。": {
+    "zh-Hans": "请选择“%@”文件夹。",
+    "zh-Hant": "請選擇「%@」資料夾。",
+    "en": "Select the “%@” folder.",
+    "es": "Selecciona la carpeta «%@».",
+    "tr": "“%@” klasörünü seçin.",
+    "ja": "「%@」フォルダを選択してください。"
+  },
+  "收起": {
+    "zh-Hans": "收起",
+    "zh-Hant": "收合",
+    "en": "Collapse",
+    "es": "Contraer",
+    "tr": "Daralt",
+    "ja": "折りたたむ"
+  },
+  "展开": {
+    "zh-Hans": "展开",
+    "zh-Hant": "展開",
+    "en": "Expand",
+    "es": "Expandir",
+    "tr": "Genişlet",
+    "ja": "展開"
+  },
+  "%@ 个 ENV 变量名": {
+    "zh-Hans": "%@ 个 ENV 变量名",
+    "zh-Hant": "%@ 個 ENV 變數名稱",
+    "en": "%@ ENV variable names",
+    "es": "%@ nombres de variables ENV",
+    "tr": "%@ ENV değişken adı",
+    "ja": "%@個のENV変数名"
+  },
+  "本页未识别到文字": {
+    "zh-Hans": "本页未识别到文字",
+    "zh-Hant": "本頁未辨識到文字",
+    "en": "No text recognized on this page",
+    "es": "No se reconoció texto en esta página",
+    "tr": "Bu sayfada metin tanınmadı",
+    "ja": "このページでは文字を認識できませんでした"
+  }
+}

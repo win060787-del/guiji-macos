@@ -1,0 +1,4 @@
+module NativeOCR {
+ header "NativeOCR.h"
+ export *
+}

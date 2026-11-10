@@ -1,0 +1,92 @@
+[
+  {
+    "file": "zh-hans.png",
+    "font": "PingFangSC-Regular",
+    "id": "zh-hans",
+    "kind": "clean synthetic printed text",
+    "language": "zh-Hans",
+    "text": "项目环境配置管理\n服务器地址和凭证保存在本机\n临时授权到期后自动失效",
+    "sha256": "c268aa0793d102de33b1f132b2a77b7fcfcb5af7179e72dbe55a598c22697ae2"
+  },
+  {
+    "file": "zh-hans-blur.png",
+    "font": "PingFangSC-Regular",
+    "id": "zh-hans-blur",
+    "kind": "synthetic Gaussian blur radius 1.25",
+    "language": "zh-Hans",
+    "text": "项目环境配置管理\n服务器地址和凭证保存在本机\n临时授权到期后自动失效",
+    "sha256": "2f27da8cd8d191b48268e5aa497dd5f207481a6b9fb2482afcadaacc384614e2"
+  },
+  {
+    "file": "zh-hant.png",
+    "font": "PingFangTC-Regular",
+    "id": "zh-hant",
+    "kind": "clean synthetic printed text",
+    "language": "zh-Hant",
+    "text": "專案環境設定管理\n伺服器位址和憑證保存在本機\n臨時授權到期後自動失效",
+    "sha256": "8503684591fbd53f686836b4665b79c392614b8414c03b84f15c63a1e7f81b43"
+  },
+  {
+    "file": "english.png",
+    "font": "Helvetica",
+    "id": "english",
+    "kind": "clean synthetic printed text",
+    "language": "en-US",
+    "text": "Project environment settings\nCredentials stay on this Mac\nTemporary access expires in 7 days",
+    "sha256": "8ff1f2b7d2a208325e14c8208405427a8da3c5b47fdb29cadd268b06df6be4e5"
+  },
+  {
+    "file": "english-blur.png",
+    "font": "Helvetica",
+    "id": "english-blur",
+    "kind": "synthetic Gaussian blur radius 1.25",
+    "language": "en-US",
+    "text": "Project environment settings\nCredentials stay on this Mac\nTemporary access expires in 7 days",
+    "sha256": "bbe257db0da06b32153829d15b8b70db03d25e9ac6122af182d36e865d5cdea6"
+  },
+  {
+    "file": "japanese.png",
+    "font": "HiraginoSans-W0",
+    "id": "japanese",
+    "kind": "clean synthetic printed text",
+    "language": "ja-JP",
+    "text": "プロジェクトの環境設定\n認証情報はこのMacに保存\n一時アクセスは7日後に失効",
+    "sha256": "949cca6dd7919eba1266804c25fa8eb96bce5bfb0504c05bcaa71d8dffe8d774"
+  },
+  {
+    "file": "japanese-blur.png",
+    "font": "HiraginoSans-W0",
+    "id": "japanese-blur",
+    "kind": "synthetic Gaussian blur radius 1.25",
+    "language": "ja-JP",
+    "text": "プロジェクトの環境設定\n認証情報はこのMacに保存\n一時アクセスは7日後に失効",
+    "sha256": "d7727d206db6b7396d0486b97bef1ec3db7592670d51a77b2ca3e632d202fcf8"
+  },
+  {
+    "file": "spanish.png",
+    "font": "Helvetica",
+    "id": "spanish",
+    "kind": "clean synthetic printed text",
+    "language": "es-ES",
+    "text": "Configuración del proyecto\nLas credenciales están en este Mac\nEl acceso temporal vence en 7 días",
+    "sha256": "af633d4be044e8ef25ef1e616d0edf5ffc5556aa453786f4a236f9120acab17e"
+  },
+  {
+    "file": "turkish.png",
+    "font": "Helvetica",
+    "id": "turkish",
+    "kind": "clean synthetic printed text",
+    "language": "tr-TR",
+    "text": "Proje ortamı yapılandırması\nKimlik bilgileri bu Mac'te saklanır\nGeçici erişim 7 gün sonra sona erer",
+    "sha256": "c845dbe153a1e01083adaaae91c8a68bb7407d0d4c7bf3459569ddeaf1769b87"
+  },
+  {
+    "file": "code.png",
+    "font": "Menlo-Regular",
+    "id": "code",
+    "kind": "clean synthetic printed text",
+    "language": "en-US",
+    "text": "PORT=3000\nAPI_BASE_URL=https://example.com\nexport const retries = 3;",
+    "sha256": "b3afcdf09c338917320a86506b38667e337e07a166aa1d20802aa0a58d833a92"
+  }
+]
