@@ -1,0 +1,26 @@
+{
+  "description": "归记 Guiji · macOS Markdown editor and local-first project workspace. Convert PDFs, Office files and images with offline OCR, manage ENV and API keys in Keychain, and export project context for Codex and Claude.",
+  "website": "https://hub.novatechai.xyz/nova-context/support/",
+  "topics": [
+    "macos",
+    "swift",
+    "swiftui",
+    "appkit",
+    "apple-silicon",
+    "markdown",
+    "markdown-editor",
+    "project-management",
+    "file-manager",
+    "developer-tools",
+    "local-first",
+    "offline-ocr",
+    "tesseract",
+    "apple-vision",
+    "pdf-to-markdown",
+    "document-conversion",
+    "keychain",
+    "api-keys",
+    "codex",
+    "vibe-coding"
+  ]
+}
