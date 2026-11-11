@@ -1,3 +1,5 @@
+[產品官網 / Product website](https://novatechai.xyz/guiji/) · [繁體中文](https://novatechai.xyz/zh-hant/guiji/)
+
 <div align="center">
 
 <img src="Demo/Sources/NovaContext/BrandAssets.xcassets/BrandLogo.imageset/InkPen.png" width="128" alt="归记水墨笔图标">
